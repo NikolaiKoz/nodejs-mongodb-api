@@ -1,0 +1,30 @@
+###
+POST http://localhost:3000/api/v1/users HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "name": "Tanos",
+    "age": 65656,
+    "email": "equilibrio@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/v1/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/users/6492393f33451f4b3cd28534 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/v1/users/6492393f33451f4b3cd28534 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "name": "Anatoli Karpov",
+    "age": 22,
+    "email": "antkarp@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/v1/users/6492369433451f4b3cd28530 HTTP/1.1
